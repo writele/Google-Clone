@@ -1,0 +1,283 @@
+
+/***** CSS RESET *****/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/***** BEGIN GOOGLE CLONE STYLE ******/
+* { 
+  /* outline: 1px dotted black; */
+    box-sizing: border-box;
+    margin: 0;
+} 
+
+html, body {
+    height: 100%;   
+}
+
+#viewport { 
+    width: 100%;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -40px /*Match Footer*/;
+}
+
+/* HEADER */
+
+#top { 
+    height: 60px;
+    width: 100%;
+    position: relative;
+}
+
+#nav {
+    width: 100%;
+    height: 50%;
+    /* overflow: auto; */
+    margin: auto;
+    position: absolute;
+    left: auto; right: 30px ;
+    top: 0; bottom: 0;
+   /* text-align: right; */
+    display: inline-block;
+    }
+
+
+#nav a {
+    padding: 5px;
+    font-family: Arial, sans-serif;
+    font-size: .8em;
+    text-decoration: none;
+    color: #000;
+}
+
+#nav a:hover {
+    text-decoration: underline;
+}
+
+#first-nav {
+    position: absolute;
+    right: 80px;
+}
+
+#first-nav img {
+    position: relative;
+    top: 5px;
+    height: 20px;
+    width: 20px;    
+}
+
+#signin {
+    position: inherit;
+    background-color: #4583EB;
+    height: 30px;
+    width: 71px;
+    right: 0;
+    border-radius: 2px;
+}
+
+#signin a {
+    position: absolute;
+    top:0; bottom: 0; right: 0; left: 0;
+    padding-top: 9px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;  
+}
+
+#signin a:hover {
+    text-decoration: none;
+}
+
+
+/* MIDDLE/LOGO */
+
+#main { 
+}
+
+#middle { 
+    height: 231px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#logo {
+    position: absolute;
+    height: 207px;
+    width: 269px;
+    bottom: 0; 
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 10px auto;
+}
+
+#logo img {
+    margin: 42% auto 0;
+    height: 45%;
+    width: 269px;
+}
+
+/* SEARCH FORM */
+
+#search { 
+    height: 102px;
+    position: relative;
+}
+    
+
+#search_form {
+    position: relative;
+    border: 1px solid lightgray;
+    width: 568px;
+    height: 28px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+input {
+    position: absolute;
+    top: 0; bottom: 0; right: 0; left: 10px;
+    margin: auto 0;
+    width: 523px;
+    height: 20px;
+    border: none;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+}
+
+.searchbox {
+    position: absolute;
+    right: 0;
+    width: 29px;
+    height: 27px;
+}
+
+form .searchbox img {
+    height: 25px;
+    width: 20px;
+}
+
+.buttons {
+    position: absolute;
+    text-align: center;
+    top: 40px; bottom: 0; right: 0; left: 0;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.btn1, .btn2 {
+    height: 29px;
+    margin: 0 5px;
+    background-color: #F6F6F6;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: #444444;
+    border: 1px solid #C6C6C6;
+    border-radius: 2px;
+}
+
+.btn1 {
+    width: 96px;
+}
+
+.btn2 {
+    width: 111px;
+}
+
+/* FOOTER */
+
+#footer, .push { 
+    height: 40px;
+    bottom: -40px;
+}
+
+#footer {
+    border: 1px solid lightgrey;  
+}
+
+.footer-nav {
+    position: relative;
+    height: 40px;
+    background: #F2F2F2;
+}
+
+.footer-inner-nav {
+    width: 100%;
+    height: 50%;
+    /*overflow: auto;*/
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+} 
+
+.footer-inner1, .footer-inner2 {
+    position: absolute;
+}
+
+.footer-inner1 {
+    left: 15px;
+}
+
+.footer-inner2 {
+    right: 15px;
+}
+
+.footer-inner-nav a {
+    padding: 15px;
+    color: #666666;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: .82em;
+}
+
+.footer-inner-nav a:hover {
+    text-decoration: underline;
+}
